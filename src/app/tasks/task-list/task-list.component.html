@@ -1,0 +1,6 @@
+<div>
+  <h2>My Tasks</h2>
+  @for(task of allTasks; track task.id){
+    <app-task-item [task]="task"></app-task-item>
+  }
+</div>

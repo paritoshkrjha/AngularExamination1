@@ -1,0 +1,11 @@
+<h1>Task Details</h1>
+<div>
+  <h2>{{ "Title: " + taskDetails?.title }}</h2>
+  <p>{{ "Description: " + taskDetails?.description }}</p>
+  <p>{{ "Status: " + taskDetails?.status }}</p>
+  <div id="button-group">
+    <button routerLink="" [class.seconary-button]="true">Back</button>
+    <button [class.edit-button]="true" [routerLink]="redirectUrl">Edit</button>
+    <button (click)="onDelete()" [class.delete-button]="true">Delete</button>
+  </div>
+</div>

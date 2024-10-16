@@ -1,0 +1,15 @@
+<a [routerLink]="redirectUrl">
+  <div
+    [class.task-item__inprogress]="task.status === 'IN_PROGRESS'"
+    [class.task-item__completed]="task.status === 'COMPLETED'"
+    [class.task-item__todo]="task.status === 'TODO'"
+    id="task-item"
+  >
+    <div id="task-item-content">
+      <h3>
+        {{ task.title }}
+      </h3>
+      <p>{{ "STATUS : " + task.status }}</p>
+    </div>
+  </div>
+</a>
